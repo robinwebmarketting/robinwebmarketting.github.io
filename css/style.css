@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+button:focus{
+    outline: 0;
+}
+clr{
+    clear: both;
+}
+.relative{
+    position: relative;
+}
+h1,h2,h3,h4,h5,h6,p,ol,ul,li,a{
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+h2{
+    font-family: 'Saira', sans-serif;
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+/*common css ends*/
+
+#banner{
+    position: relative;
+}
+#banner .banner_slide1{
+    background: url(../images/banner1.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner .banner_slide2{
+    background: url(../images/banner2.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner .banner_slide3{
+    background: url(../images/banner3.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner .banner_overlay{
+    background: rgba(0, 0, 0, 0.5);
+    padding-bottom: 80px;
+    width: 100%;
+}
+#banner .banner_text h4{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 150px;
+}
+#banner .banner_text h1{
+    color: #fff;
+    font-size: 75px;
+    font-weight: 900;
+    font-family: 'Saira', sans-serif;
+    margin-top: 40px;
+}
+#banner .banner_text h1 span.t_slide1,.t_slide2,.t_slide3{
+    color: #ff214f;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+}
+#banner .banner_text p{
+    font-size: 16px;
+    color: #f3f3f3;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.9;
+    margin-top: 50px;
+}
+#banner .banner_text ul li a i{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#banner .banner_text ul li a i:hover{
+    color: #ff214f;
+    transition: all linear 0.4s;
+}
+header #menubar{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+}
+header #menubar.navFixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 99999999;
+    width: 100%;
+    line-height: 50px;
+}
+#menubar .navbar-brand{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: .3px;
+    line-height: 100%;
+    color: #ff214f;
+    cursor: pointer;
+}
+#menubar .navbar-brand span{
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+}
+header #menubar nav .navbar-nav .nav-item .nav-link{
+    padding: 0 20px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;
+    color: #fff;
+    position: relative;
+}
+header #menubar nav .navbar-nav .nav-item .nav-link:hover{
+    color: #ff214f;
+}
+header #menubar nav .navbar-nav .nav-item .nav-link.active{
+    color: #ff214f;
+}
+#banner .slick-dots li button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #fff;
+    margin: 0 5px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+#banner .slick-dots{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+#banner .slick-dots li.slick-active button{
+    background: #007bff;
+    border-color: #007bff;
+}
+
+/* header ends */
+
+#about .about_head h2{
+    padding-bottom: 50px;
+}
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+}
+#about .about_image img{
+    width: 450px;
+}
+#about .about_text h3{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ff214f;
+    margin-bottom: 20px;
+}
+#about .about_text h4{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 40px;
+}
+#about .about_text h4 span{
+    color: #ff214f;
+}
+#about .about_text p{
+    margin-bottom: 50px;
+}
+#about .about_text .skill{
+    margin-bottom: 100px;
+}
+#about .about_text .skill h5{
+    font-family: 'Saira', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+#about .about_text ul li a{
+    background: #ff214f;
+    padding: 7px 27px;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: 'Saira', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: 3px solid #ff214f;
+    margin: 0 10px;
+    transition: all linear 0.2s;
+    color: #fff;
+}
+#about .about_text ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+/* about ends */
+
+#service{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f7f7f7;
+}
+#service .service_head h2{
+    padding-bottom: 50px;
+}
+#service .service_head h2:after{
+    position: absolute;
+    content: '';
+    width: 14%;
+    height: 5px;
+    background: #ff214f;
+    transform: translateX(-50%);
+    top: 46px;
+    left: 50%;
+}
+#service .service_part i{
+    font-size: 40px;
+    color: #ff214f;
+}
+#service .service_part h3{
+    font-family: 'Saira', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+    margin: 20px 0;
+}
+#service .service_part .colr{
+    -webkit-transition: all linear 0.3s;
+    -ms-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    transition: all linear 0.4s;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 10px 0;
+}
+#service .service_part .colr:hover{
+    color: #fff;
+    background: #ff214f;
+}
+#service .service_part .colr:hover i{
+    color: #fff;
+}
+#service .service_part .colr:hover p{
+    color: #fff;
+}
+#service .service_part .colr:hover h3{
+    color: #fff;
+}
+
+/* service ends */
+
+#work{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#work .work_head h2{
+    margin-bottom: 30px;
+}
+#work .work_head h2:after{
+    position: absolute;
+    content: '';
+    width: 25%;
+    height: 5px;
+    background: #ff214f;
+    transform: translateX(-50%);
+    top: 46px;
+    left: 50%;
+}
+#work .work_button ul li{
+    float: left;
+    margin: 30px 10px;
+    line-height: 40px;
+    background: #ff214f;
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    border: 2px solid #ff214f;
+}
+#work .work_button ul li:hover{
+    background: #fff;
+    border: 2px solid #ff214f;
+    color: #222;
+}
+#work .main_image .work_image{
+    margin: 30px 0;
+}
+#work .main_image .work_image .work_overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: all linear 0.5s;
+    background: #000;
+}
+#work .main_image .work_image .work_overlay:hover{
+    opacity: 1;
+    z-index: 999999;
+}
+#work .main_image .work_image i{
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    color: #ff214f;
+}
+
+/* work ends */
+
+#testimoni{
+    background: url(../images/testimoni.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#testimoni .testimoni_overlay{
+    background: rgba(34, 34, 34, 0.8);
+    padding-bottom: 150px;
+}
+#testimoni .testimoni_overlay .testimoni_slider p{
+    color: #fff;
+    margin-top: 200px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 50px;
+}
+#testimoni .testimoni_overlay .testimoni_slider h4{
+    color: #fff;
+    font-family: 'Saira', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #ff214f;
+}
+#testimoni .testimoni_overlay .testimoni_slider h5{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Saira', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+#testimoni .testimoni_overlay .testimoni_slider .testimoni_image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#testimoni .slick-dots li button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #869791;
+    margin: 0 5px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+#testimoni .slick-dots{
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+#testimoni .slick-dots li.slick-active button{
+    background: #fff;;
+    border-color: #fff;
+}
+
+/* testimonial ends */
+
+#news{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+}
+#news .news_head h2:after{
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 5px;
+    background: #ff214f;
+    transform: translateX(-50%);
+    top: 46px;
+    left: 50%;
+}
+#news .news_content .news_shadow{
+    width: 350px;
+    border: 2px solid red;
+    margin-top: 100px;
+}
+#news .news_content .news_shadow img{
+    margin-bottom: 20px;
+}
+#news .news_content .news_shadow h4 a{
+    font-family: 'Saira', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    transition: all linear 0.2s;
+    padding: 10px 40px;
+}
+#news .news_content .news_shadow p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    padding: 10px 40px;
+}
+#news .news_content .news_shadow a:hover{
+    color: #ff214f;
+}
+#news .news_content .news_shadow h5{
+    margin-bottom: 20px;
+}
+#news .news_content .news_shadow h5 a{
+    color: #ff214f;
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 40px;
+}
+
+/* news ends */
+
+#partner{
+    background: url(../images/partner.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+}
+#partner .partner_overlay{
+    background: rgb(0, 0, 0, 0.9);
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#partner .partner_image{
+    margin-top: 150px;
+}
+
+/* partner ends */
+
+#touch{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+}
+#touch .touch_head h2:after{
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 5px;
+    background: #ff214f;
+    transform: translateX(-50%);
+    top: 46px;
+    left: 50%;
+}
+#touch .touch_left{
+    margin-top: 100px;
+}
+#touch .touch_left ul li i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ff214f;
+    margin-top: 10px;
+}
+#touch .touch_left ul li a{
+    color: #000;
+    font-weight: 600;
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+}
+#touch .touch_left ul li a:hover{
+    color: #ff214f;
+}
+#touch .touch_right form input.text{
+    color: red;
+}
+#touch .touch_right{
+    margin-top: 100px;
+}
+#touch .touch_right input[type="text"]{
+    color: #495057;
+    height: 41px;
+    font-size: 14px;
+    width: 348px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-right: 30px;
+}
+#touch .touch_right input[type="email"]{
+    color: #495057;
+    height: 41px;
+    font-size: 14px;
+    width: 347px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#touch .touch_right input,textarea{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #495057;
+    height: 41px;
+    border: none;
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    padding: 5px 0;
+}
+#touch .touch_right input[type="submit"]{
+    color: #fff;
+    width: 115px;
+    height: 50px;
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+    background: #ff214f;
+    border: 3px solid #ff214f;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Saira', sans-serif;
+    transition: all linear 0.3s;
+    border-radius: 5px;
+}
+#touch .touch_right input[type="submit"]:hover{
+    background: #fff;
+    color: #333;
+}
+
+/* touch ends */
+
+#footer_bg{
+    background: url(../images/footer.jpg) no-repeat center;
+    background-size: cover;
+}
+#footer_bg .footer_overlay{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#footer_bg .footer_overlay p{
+    color: #fff;
+    font-family: 'Saira', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#footer_bg .footer_overlay ul li a i{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#footer_bg .footer_overlay ul li a i:hover{
+    color: #ff214f;
+    transition: all linear 0.4s;
+}
+
+/* footer ends*/
+
+.top_arrow{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 45px;
+    color: #ff214f;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+/* preloader start*/
+
+#preloader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url('../images/Pacman.gif') no-repeat center center;
+}
+/* preloader ends */
+
+
+.modal-body{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.modal{
+    z-index: 99999999;
+}
+.modal .input_cls{
+    padding: 0 10px;
+    border: 1px solid #cbc8c8;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 35px;
+}
+.modal .send{
+    width: 100%;
+    height: 50px;
+    background: #ff214f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+}
+.modal-header{
+    border-bottom: 1px solid #ff214f;
+}
+.modal-title h5{
+    color: #ff214f;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+}
+.modal-header .close{
+    margin: 0;
+    padding: 0;
+}
+.modal-header .close span{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 30px;
+    display: inline-block;
+    background: #ff214f;
+}
+
+/* modal ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
